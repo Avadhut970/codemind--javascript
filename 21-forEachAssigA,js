@@ -1,0 +1,53 @@
+const arrayNumbers=[1,-7,40,502,-77,91,0,108,89,-601];
+///01 
+console.log(`============Task 1==============`);
+arrayNumbers.forEach( (element, index) => {
+    console.log(element, index);
+} );
+
+console.log(`============Task 2==============`);
+arrayNumbers.forEach( (element) => {
+    if (element>0){
+    console.log(element);
+    }
+} );
+////02
+
+console.log(`============Task 3==============`);
+let newarray =[];
+arrayNumbers.forEach((element => {
+    if (element<0) {
+       newarray.push(element);
+         
+           }
+}))
+console.log(newarray);
+
+/// 04
+console.log(`============Task 4==============`);
+arrayNumbers.forEach( (element) => {
+    if (element%2==0){
+    console.log(element);
+    }
+} );
+
+
+//// 05
+console.log(`============Task 5==============`);
+let sum = 0;
+arrayNumbers.forEach((element)=>{
+sum=sum+element;
+});
+
+console.log("Sum of all elements:", sum);
+
+console.log(`============Task 6==============`);
+///06
+let nearray =[];
+arrayNumbers.forEach((element => {
+    if (element%2==0) {
+       nearray.push(element);
+         
+           }
+}))
+console.log(nearray);
